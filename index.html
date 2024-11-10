@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bem-vindo - Selecione seu Perfil</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background-color: #f4f4f9;
+        }
+        .container {
+            text-align: center;
+            background-color: #fff;
+            padding: 30px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            width: 300px;
+        }
+        h1 {
+            color: #4a4a4a;
+            margin-bottom: 24px;
+        }
+        .btn {
+            width: 100%;
+            padding: 15px;
+            margin: 10px 0;
+            font-size: 16px;
+            color: #fff;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+        .btn-motorista {
+            background-color: #4caf50;
+        }
+        .btn-passageiro {
+            background-color: #2196f3;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <h1>Quem é você?</h1>
+    <!-- Link atualizado para redirecionar para a página de login -->
+    <a href="https://ace839.github.io/login/" target="_blank">
+        <button class="btn btn-motorista">Motorista</button>
+    </a>
+    <button class="btn btn-passageiro" onclick="escolherOpcao('passageiro')">Passageiro</button>
+</div>
+
+<script>
+    function escolherOpcao(opcao) {
+        if (opcao === 'passageiro') {
+            // Redireciona para a página de login do passageiro
+            window.location.href = 'login_passageiro.html';
+        }
+    }
+</script>
+
+</body>
+</html>
